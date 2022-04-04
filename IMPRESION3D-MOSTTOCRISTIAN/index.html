@@ -7,17 +7,18 @@
     <title>GM IMPRESIONES</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="css/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@700&display=swap');
-    </style>
+    <!-- Importamos fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&display=swap" rel="stylesheet">
 </head>
 <body>
    <!-- fila de logo + nav --> 
 	<header>
     <div class="container">    
       <div class="logoGM"> 
-      <a href="index.html"><img src="images/logo.png" alt="Logo GM Impresiones" class="logoGM__img"> </a>
-       <h3>GM IMPRESIONES 3D</h3>
+      <a href="index.html"><h3 class="logoGM__img">GM-IMPRESIONES 3D</h3> </a>
+       
       </div> 
         <nav>
           <ul>
@@ -45,11 +46,11 @@
    <!--Seccion: ¿Como trabajamos?  -->
    <section class="whatDoWeDo">
       <h3>¿Como trabajamos?</h3>   
-     
+     <article class="whatDoWeDo__Cards"> 
       <div class="card">
         <img src="images/lamp.png" alt="Idea">
         <div class="card__container">
-          <h4><b>Paso 1</b></h4>
+          <h4><b>PASO 1</b></h4>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, dolorum eos eum expedita hic consequuntur ipsum similique totam velit odit quaerat commodi nemo error facere, inventore pariatur, laudantium est ullam.</p>
         </div>
       </div>
@@ -57,7 +58,7 @@
       <div class="card">
         <img src="images/print.png" alt="Impresion">
         <div class="card__container">
-          <h4><b>Paso 2</b></h4>
+          <h4><b>PASO 2</b></h4>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem dolores sint iure dolorem, incidunt error impedit fuga, maiores, officia accusantium praesentium laudantium deserunt ullam unde distinctio nisi id. Enim, tempora.</p>
         </div>
       </div>
@@ -65,16 +66,17 @@
       <div class="card">
         <img src="images/entrega.png" alt="Entrega">
         <div class="card__container">
-          <h4><b>Paso 3</b></h4>
+          <h4><b>PASO 3</b></h4>
           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat consequuntur laboriosam fugiat nam dolores alias laudantium quam eius veniam omnis ipsa cumque, a non molestias ab voluptates vero qui cupiditate.</p>
         </div>
       </div>
+    </article> 
    </section>
 
    <!-- Seccion: Imprime tus ideas! -->
    <section class="printYourIdea">
-     <h3>Envianos tu idea, la modelamos y te la presupuestamos!</h3>
-     <button><a href="pages/creaTuIdea.html">Crea tu idea!</a></button>
+    <h3>Envianos tu idea, la modelamos y te la presupuestamos!</h3>
+     <a href="pages/creaTuIdea.html">Crea tu idea!</a>
    </section>
 
    <!-- Seccion: Footer -->

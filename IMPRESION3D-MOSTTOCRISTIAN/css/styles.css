@@ -5,7 +5,7 @@
 }
 
 body{
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Bungee', cursive;
   height: 150vh;
 }
 
@@ -15,7 +15,8 @@ h1{
 
 footer{
   color: rgb(223, 219, 219);
-  background: rgb(19, 7, 54);
+  background: rgb(4, 1, 15);
+  height: 10vh;
 }
 
 footer img{
@@ -38,19 +39,16 @@ header .container .logoGM{
 }
 
 header .container .logoGM h3{
-  color:#e6d7ec;
+  color:#f8f8f8;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
   border-radius: 2px;
-
+  font-family: 'Bungee Shade', cursive;
 }
 
 .logoGM__img{
-  max-width: 60px;
-  max-height: 60px;
-  background-image: linear-gradient(to right, #330867 0%, #d7c4df 100%);
+  background-image: linear-gradient(to bottom, #330867 0%, #16042c 100%);
   margin-left: 10px;
-  border: ridge;
-  border-radius: 10px;
+  height: 2em;
 }
 
 header .container nav ul{
@@ -64,25 +62,36 @@ header .container nav ul li{
 
 header .container nav ul li a{
   text-decoration: none;
-  color: rgb(253, 249, 249);
-  font-weight: bold;
+  color: rgb(255, 255, 255);
+  font-weight:normal;
   text-transform: uppercase;
   text-shadow: 2px 2px 2px rgb(0, 0, 0);
 }
 
+
+/* Zona Imprime tu idea */
 .printYourIdea{
   text-align: center;
   background-image: linear-gradient(to left, #30cfd0 0%, #9c62e2 100%);
-  
+  height: 45rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .printYourIdea h3{
   font-size: 70px;
   text-align: center;
   color: white;
+  font-family: 'Bungee Shade', cursive;
 }
 
-.printYourIdea button{
+.printYourIdea a{
+  color:white;
+  text-decoration: none;
+
   text-decoration:none;
   font-weight:600;
   font-size:20px;
@@ -92,13 +101,22 @@ header .container nav ul li a{
   padding-left:150px;
   padding-right:150px;
   background-image: linear-gradient(to left, #0bafaf 0%, #8c40e9 100%);
+  display: inline-block;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
-.printYourIdea a{
-  color:white;
-  text-decoration: none;
+.printYourIdea a:hover{
+  background-image: linear-gradient(to left, #087979 0%, #7c1fec 100%);
+  
 }
 
+/* Zona Que hacemos? */
+
+.whatDoWeDo{
+  height: 45rem;
+}
 .whatDoWeDo .card img{
   max-width: 150px;
   max-height: 150px;
@@ -107,8 +125,45 @@ header .container nav ul li a{
 .whatDoWeDo h3{
   font-size: 70px;
   text-align: center;
+  font-family: 'Bungee Shade', cursive;
 }
 
+.whatDoWeDo__Cards{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.whatDoWeDo .card{
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  border-radius: 5px;
+  max-width: 350px;
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(243, 243, 243);
+  padding: 3em;
+}
+
+.whatDoWeDo .card .card__container{
+    padding: 2px 16px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.whatDoWeDo .card .card__container h4{
+   display: inline-block;
+   margin-bottom: 10px;
+}
+
+.whatDoWeDo .card .card__container p{
+  text-align: justify;
+}
+/* Zona SliderBanner */
 
 .sliderBanner{
   position: relative;
@@ -123,7 +178,12 @@ header .container nav ul li a{
 
 .sliderBanner__textContainer{
   width: 50%;
-  color: #fff
+  color: #fff;
+  font-family: 'Bungee Shade', cursive;
+}
+
+.sliderBanner__textContainer h3{
+  text-size: 10px;
 }
 
 .sliderBanner__wave{
@@ -138,6 +198,7 @@ header .container nav ul li a{
 }
 
 
+/* Servicios */
 
 .serviciosVideo{
   max-width: 50%;
